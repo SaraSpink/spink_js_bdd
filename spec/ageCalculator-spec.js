@@ -32,6 +32,10 @@ describe('AgeCalculator', function() {
     });
 
     it('tells how many SECONDS old you are today based on entered birthday', function() {
-      expect(reusableAgeCalculator.secondsOld("03/17/1984")).toEqual(1507930859)
+      let today = Date.parse(new Date())
+      let dateEntered = Date.parse(new Date("03/17/1984"));
+      let dif = (today - dateEntered) * 1e-3
+      let ageInSeconds = Math.abs(dif)
+      expect(reusableAgeCalculator.secondsOld("03/17/1984")).toEqual(ageInSeconds)
     });
 });
