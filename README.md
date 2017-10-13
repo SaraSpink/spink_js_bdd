@@ -1,4 +1,4 @@
-# _Maturing in the Milky Way_
+# :milky_way:_Maturing in the Milky Way_:milky_way:
 ### A solar year lasts 365 days on planet Earth. Calculate your exact age and find out your age on other planets.
 ## By Sara Spink
 ## Expected Behavior:
@@ -13,14 +13,19 @@
 |--------------------------------------|-------|----------|
 | Enter your birthday to see your age right now in Earth years. | "3/17/1984" | 33  |
 | Enter your birthday to see your age in right now in seconds. | "3/17/1984" (entered on 10/13/2017)   | approx. 1059574349  |
-
-If a user has already surpassed the average life expectancy, your application should account for (and test) this possible outcome as well.
+|--------------------------------------|-------|----------|
+| Calculate life expectancy by country and smoking habits | "United States", false (not smoker) | 79 |
+| See how much longer you will live based on life expectancy | 33, 79 | 46 |
+| See how far you have surpassed your life expectancy | 88, 79 | 9 |
 
 ## Technologies Used
 - javascript
 - jquery
 - ES6
 - node
+
+## Eventual Goals:
+Create user interface where a person can check their age and life expectancy on various planets based on their birthday
 
 ## Support and contact details
 
