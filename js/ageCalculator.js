@@ -21,6 +21,17 @@ export class ageCalculator {
     return ageInVenus
   }
 
+  yearToMars(age) {
+    const yearInMars = 1.88;
+    let ageInMars = age * yearInMars;
+    return ageInMars
+  }
+
+  yearToJupiter(age) {
+    const yearInJupiter = 11.86;
+    let ageInJupiter = age * yearInJupiter;
+    return ageInJupiter
+  }
 
 
 
