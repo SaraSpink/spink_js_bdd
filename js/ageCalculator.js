@@ -9,13 +9,18 @@ export class ageCalculator {
     return ageInSeconds
   }
 
+  yearToMercury(age) {
+    const yearInMercury = 0.24;
+    let ageInMercury = age * yearInMercury;
+    return ageInMercury
+  }
 
+  yearToVenus(age) {
+    const yearInVenus = 0.62;
+    let ageInVenus = age * yearInVenus;
+    return ageInVenus
+  }
 
-  // addInstrument(index){
-  //   const availableItems = new Inventory()
-  //   this.instruments.push(availableItems.instrumentInventory[index]);
-  //   this.points.push(availableItems.instrumentPoints[index]);
-  // }
 
 
 
