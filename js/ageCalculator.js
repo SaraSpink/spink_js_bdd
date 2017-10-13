@@ -1,3 +1,4 @@
+import { date } from './../js/date.js';
 export class ageCalculator {
   constructor(age) {
   this.age = age;
@@ -12,27 +13,24 @@ export class ageCalculator {
   yearToMercury(age) {
     const yearInMercury = 0.24;
     let ageInMercury = age * yearInMercury;
-    return ageInMercury
+    return (ageInMercury.toFixed(2))*1
   }
 
   yearToVenus(age) {
     const yearInVenus = 0.62;
     let ageInVenus = age * yearInVenus;
-    return ageInVenus
+    return (ageInVenus.toFixed(2))*1
   }
 
   yearToMars(age) {
     const yearInMars = 1.88;
     let ageInMars = age * yearInMars;
-    return ageInMars
+    return (ageInMars.toFixed(2))*1
   }
 
   yearToJupiter(age) {
     const yearInJupiter = 11.86;
     let ageInJupiter = age * yearInJupiter;
-    return ageInJupiter
+    return (ageInJupiter.toFixed(2))*1
   }
-
-
-
 }

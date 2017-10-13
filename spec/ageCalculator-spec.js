@@ -1,5 +1,6 @@
-
 import { ageCalculator } from './../js/ageCalculator.js';
+import { date } from
+'./../js/date.js';
 
 describe('ageCalculator', function() {
   var reusableAgeCalculator;
@@ -15,8 +16,8 @@ describe('ageCalculator', function() {
       expect(reusableAgeCalculator.yearToMercury(3)).toEqual(0.72)
     });
 
-    it('converts one earth year into Mars years', function() {
-      expect(reusableAgeCalculator.yearToMars(3)).toEqual(5.64)
+    it('converts one earth year into Venus years', function() {
+      expect(reusableAgeCalculator.yearToVenus(3)).toEqual(1.86)
     });
 
     it('converts one earth year into Mars years', function() {
