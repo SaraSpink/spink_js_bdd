@@ -48,4 +48,36 @@ export class AgeCalculator {
     let ageInJupiter = age * yearInJupiter;
     return (ageInJupiter.toFixed(2))*1
   }
+
+  lifeExpectancy(location, smoker){
+    let lifeExpectancy = 0
+    if(location === "United States" && smoker === false){
+      lifeExpectancy = 79
+    } else if (location === "United States" && smoker === true){
+      lifeExpectancy = 70
+    } else if (location === "France" && smoker === false){
+      lifeExpectancy = 82
+    } else if (location === "France" && smoker === true){
+      lifeExpectancy = 74
+    } else if (location === "New Zealand" && smoker === false){
+      lifeExpectancy = 81
+    } else if (location === "New Zealand" && smoker === true){
+      lifeExpectancy = 72
+    } else if (location === "China" && smoker === false){
+      lifeExpectancy = 76
+    } else if (location === "China" && smoker === true){
+      lifeExpectancy = 67
+    } else if (location === "Kenya" && smoker === false){
+      lifeExpectancy = 63
+    } else if (location === "Kenya" && smoker === true){
+      lifeExpectancy = 55
+    } else if (location === "Brazil" && smoker === false){
+      lifeExpectancy = 75
+    } else if (location === "Brazil" && smoker === true){
+      lifeExpectancy = 67
+    } else {
+      lifeExpectancy = 79
+    }
+    return lifeExpectancy;
+  }
 }

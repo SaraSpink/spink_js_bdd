@@ -13,7 +13,7 @@
 |--------------------------------------|-------|----------|
 | Enter your birthday to see your age right now in Earth years. | "3/17/1984" | 33  |
 | Enter your birthday to see your age in right now in seconds. | "3/17/1984" (entered on 10/13/2017)   | approx. 1059574349  |
-_Take two dates and determine the difference, in seconds, between the two. (This way a user can enter a birthdate and the application can compare the birthdate against the current time to come up with an accurate age.)_
+
 
 
 Determine how many years a user has left to live on each planet… (yikes!) To do this, the application will have to calculate the user’s life expectancy. (Note that life expectancy shouldn’’t be a hard-coded value. After all, it can vary from country to country and depending on various demographics.)

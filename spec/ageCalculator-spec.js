@@ -36,7 +36,13 @@ describe('AgeCalculator', function() {
       let dateEntered = Date.parse(new Date("03/17/1984"));
       let dif = (today - dateEntered) * 1e-3
       let ageInSeconds = Math.abs(dif)
-      console.log(ageInSeconds)
       expect(reusableAgeCalculator.secondsOld("03/17/1984")).toEqual(ageInSeconds)
     });
+
+    it('calculates life expectancy based on region and smoking habits', function() {
+      expect(reusableAgeCalculator.lifeExpectancy("France", true)).toEqual(74)
+      expect(reusableAgeCalculator.lifeExpectancy("United States", false)).toEqual(79)
+    });
+
+
 });
