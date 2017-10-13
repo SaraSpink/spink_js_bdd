@@ -1,5 +1,5 @@
-import { date } from './../js/date.js';
-export class ageCalculator {
+import { moment } from "./../node_modules/moment/moment.js"
+export class AgeCalculator {
   constructor(age) {
   this.age = age;
   }
@@ -9,6 +9,13 @@ export class ageCalculator {
     let ageInSeconds = age * yearInSeconds;
     return ageInSeconds
   }
+
+  dateEntered(date) {
+    let dateEntered = new Date(date);
+    return dateEntered;
+  }
+
+
 
   yearToMercury(age) {
     const yearInMercury = 0.24;

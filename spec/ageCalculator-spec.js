@@ -1,12 +1,11 @@
-import { ageCalculator } from './../js/ageCalculator.js';
-import { date } from
-'./../js/date.js';
+import { AgeCalculator } from './../js/ageCalculator.js';
 
-describe('ageCalculator', function() {
+
+describe('AgeCalculator', function() {
   var reusableAgeCalculator;
 
   beforeEach(function() {
-    reusableAgeCalculator = new ageCalculator()
+    reusableAgeCalculator = new AgeCalculator()
   });
     it('converts one earth year into seconds', function() {
       expect(reusableAgeCalculator.yearToSeconds(1)).toEqual(31536000)
@@ -28,5 +27,7 @@ describe('ageCalculator', function() {
       expect(reusableAgeCalculator.yearToJupiter(3)).toEqual(35.58)
     });
 
-
+    it('checks the date entered', function() {
+      expect(reusableAgeCalculator.dateEntered("09/13/2017")).toEqual("09/13/2017")
+    });
 });
