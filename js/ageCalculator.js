@@ -10,14 +10,14 @@ export class AgeCalculator {
     return ageInSeconds
   }
 
-  yearsOld(date) {
+  yearsOld(birthday) {
     let today = new Date();
-    let dateEntered = new Date(date);
+    let dateEntered = new Date(birthday);
     let yearsOld = today.getFullYear() - dateEntered.getFullYear()
     console.log(dateEntered)
     console.log(today)
     console.log(yearsOld)
-    return dateEntered
+    return yearsOld;
 
 
   }
