@@ -14,13 +14,10 @@ export class AgeCalculator {
     let today = new Date();
     let dateEntered = new Date(birthday);
     let yearsOld = today.getFullYear() - dateEntered.getFullYear()
-    console.log(dateEntered)
-    console.log(today)
-    console.log(yearsOld)
     return yearsOld;
-
-
   }
+
+  secondsOld(birthday)
 
   yearToMercury(age) {
     const yearInMercury = 0.24;
