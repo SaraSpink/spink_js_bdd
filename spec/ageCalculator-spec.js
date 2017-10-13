@@ -46,7 +46,10 @@ describe('AgeCalculator', function() {
 
     it('lets you know how much longer you can expect to live', function() {
       expect(reusableAgeCalculator.surpassedLifeExpectancy(33, 79)).toEqual(46)
-      expect(reusableAgeCalculator.surpassedLifeExpectancy(88, 79)).toEqual("Shouldn't you be dead by now?")
+    });
+
+    it('lets you know how far past your life expectancy you have lived', function() {
+      expect(reusableAgeCalculator.surpassedLifeExpectancy(88, 79)).toEqual(9)
     });
 
 
