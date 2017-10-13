@@ -12,10 +12,8 @@ export class AgeCalculator {
 
   dateEntered(date) {
     let dateEntered = new Date(date);
-    return dateEntered;
+    return moment('dateEntered', 'MM/DD/YYYY').format(l);
   }
-
-
 
   yearToMercury(age) {
     const yearInMercury = 0.24;
