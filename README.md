@@ -14,15 +14,11 @@
 | Enter your birthday to see your age right now in Earth years. | "3/17/1984" | 33  |
 | Enter your birthday to see your age in right now in seconds. | "3/17/1984" (entered on 10/13/2017)   | approx. 1059574349  |
 
-
-
-Determine how many years a user has left to live on each planet… (yikes!) To do this, the application will have to calculate the user’s life expectancy. (Note that life expectancy shouldn’’t be a hard-coded value. After all, it can vary from country to country and depending on various demographics.)
-
 If a user has already surpassed the average life expectancy, your application should account for (and test) this possible outcome as well.
 
 ## Technologies Used
 - javascript
-- jquery-3
+- jquery
 - ES6
 - node
 

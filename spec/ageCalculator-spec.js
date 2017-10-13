@@ -44,5 +44,10 @@ describe('AgeCalculator', function() {
       expect(reusableAgeCalculator.lifeExpectancy("United States", false)).toEqual(79)
     });
 
+    it('lets you know how much longer you can expect to live', function() {
+      expect(reusableAgeCalculator.surpassedLifeExpectancy(33, 79)).toEqual(46)
+      expect(reusableAgeCalculator.surpassedLifeExpectancy(88, 79)).toEqual("Shouldn't you be dead by now?")
+    });
+
 
 });

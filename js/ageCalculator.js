@@ -80,4 +80,12 @@ export class AgeCalculator {
     }
     return lifeExpectancy;
   }
+
+  surpassedLifeExpectancy(age, lifeExpectancy) {
+    if (lifeExpectancy - age > 0) {
+      return (lifeExpectancy - age)
+    } else {
+      return "Shouldn't you be dead by now?"
+    }
+  }
 }
