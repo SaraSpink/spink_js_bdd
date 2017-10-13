@@ -4,15 +4,22 @@ export class AgeCalculator {
   this.age = age;
   }
 
-  yearToSeconds(age) {
+  yearToSeconds(years) {
     const yearInSeconds = 31536000;
-    let ageInSeconds = age * yearInSeconds;
+    let ageInSeconds = years * yearInSeconds;
     return ageInSeconds
   }
 
-  dateEntered(date) {
+  yearsOld(date) {
+    let today = new Date();
     let dateEntered = new Date(date);
-    return moment('dateEntered', 'MM/DD/YYYY').format(l);
+    let yearsOld = today.getFullYear() - dateEntered.getFullYear()
+    console.log(dateEntered)
+    console.log(today)
+    console.log(yearsOld)
+    return dateEntered
+
+
   }
 
   yearToMercury(age) {

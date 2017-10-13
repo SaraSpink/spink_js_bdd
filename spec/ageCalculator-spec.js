@@ -28,7 +28,8 @@ describe('AgeCalculator', function() {
     });
 
     it('checks the date entered', function() {
-      let dateEntered = "09/13/2017"
+      let dateEntered = "03/17/1984"
       expect(reusableAgeCalculator.dateEntered("09/13/2017")).toEqual("09/13/2017")
+      console.log(new Date(dateEntered))
     });
 });
