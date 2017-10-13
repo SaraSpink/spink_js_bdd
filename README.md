@@ -1,18 +1,15 @@
 # _Maturing in the Milky Way_
 ### A solar year lasts 365 days on planet Earth. Calculate your exact age and find out your age on other planets.
 ## By Sara Spink
-## Description/User Stories:
+## Expected Behavior:
 
-
-Convert your age into earth seconds!
-
-Return the age of a human in Mercury years. (A Mercury year is .24 Earth years.)
-
-Return the age of a human in Venus years. (A Venus year is .62 Earth years.)
-
-Return the age of a human in Mars years. (A Mars year is 1.88 Earth years.)
-
-Return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years.)
+| Behavior                             | Input | Output   |
+|--------------------------------------|-------|----------|
+| Convert your age into earth seconds! | 1     | 31536000 |
+| Convert your age into Mercury years. | 3     | 0.72     |
+| Convert your age into Venus years.   | 3     | 1.86     |
+| Convert your age into Mars years.    | 3     | 5.64     |
+| Convert your age into Jupiter years. | 3     | 35.58    |
 
 _Take two dates and determine the difference, in seconds, between the two. (This way a user can enter a birthdate and the application can compare the birthdate against the current time to come up with an accurate age.)_
 
