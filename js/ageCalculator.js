@@ -1,32 +1,22 @@
 export class ageCalculator {
   constructor(age) {
-    this.age = age;
+  this.age = age;
   }
 
   yearToSeconds(age) {
-    let age = age * 31536000
-    return age;
+    const yearInSeconds = 31536000;
+    let ageInSeconds = age * yearInSeconds;
+    return ageInSeconds
   }
 
-  yearToSeconds(age){
-    const yearToSeconds = new ageCalculator()
-    this.age.push(yearToSeconds.age[age]);
-  }
 
-  addInstrument(index){
-    const availableItems = new Inventory()
-    this.instruments.push(availableItems.instrumentInventory[index]);
-    this.points.push(availableItems.instrumentPoints[index]);
-  }
 
-  addExtras(index){
-    const availableItems = new Inventory()
-    this.extras.push(availableItems.extrasInventory[index]);
-    this.points.push(availableItems.extrasPoints[index]);
-  }
+  // addInstrument(index){
+  //   const availableItems = new Inventory()
+  //   this.instruments.push(availableItems.instrumentInventory[index]);
+  //   this.points.push(availableItems.instrumentPoints[index]);
+  // }
 
-  transaction(points){
-    this.points.push(points);
-  }
+
 
 }
