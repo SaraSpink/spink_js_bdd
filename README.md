@@ -10,7 +10,9 @@
 | Convert your age into Venus years.   | 3     | 1.86     |
 | Convert your age into Mars years.    | 3     | 5.64     |
 | Convert your age into Jupiter years. | 3     | 35.58    |
-
+|--------------------------------------|-------|----------|
+| Enter your birthday to see your age right now in Earth years. | "3/17/1984" | 33  |
+| Enter your birthday to see your age in right now in seconds. | "3/17/1984" (entered on 10/13/2017)   | approx. 1059574349  |
 _Take two dates and determine the difference, in seconds, between the two. (This way a user can enter a birthdate and the application can compare the birthdate against the current time to come up with an accurate age.)_
 
 

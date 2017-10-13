@@ -22,6 +22,7 @@ export class AgeCalculator {
     let dif = (today - dateEntered) * 1e-3
     let secondsOld = Math.abs(dif)
     return secondsOld;
+    console.log(secondsOld)
   }
 
   yearToMercury(age) {
