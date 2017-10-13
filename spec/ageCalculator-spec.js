@@ -27,7 +27,11 @@ describe('AgeCalculator', function() {
       expect(reusableAgeCalculator.yearToJupiter(3)).toEqual(35.58)
     });
 
-    it('tells how old you are today based on entered birthday', function() {
+    it('tells how many YEARS old you are today based on entered birthday', function() {
       expect(reusableAgeCalculator.yearsOld("03/17/1984")).toEqual(33)
+    });
+
+    it('tells how many SECONDS old you are today based on entered birthday', function() {
+      expect(reusableAgeCalculator.secondsOld("03/17/1984")).toEqual(1507930859)
     });
 });

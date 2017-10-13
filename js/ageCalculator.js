@@ -1,4 +1,3 @@
-import { moment } from "./../node_modules/moment/moment.js"
 export class AgeCalculator {
   constructor(age) {
   this.age = age;
@@ -17,7 +16,13 @@ export class AgeCalculator {
     return yearsOld;
   }
 
-  secondsOld(birthday)
+  secondsOld(birthday) {
+    let today = Date.parse(new Date())
+    let dateEntered = Date.parse(new Date(birthday));
+    let dif = (today - dateEntered) * 1e-3
+    let secondsOld = Math.abs(dif)
+    return secondsOld;
+  }
 
   yearToMercury(age) {
     const yearInMercury = 0.24;
