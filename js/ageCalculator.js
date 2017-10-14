@@ -1,7 +1,7 @@
 export class AgeCalculator {
-  constructor(age) {
-  this.age = age;
-  }
+  // constructor(age) {
+  // this.age = age;
+
 
   yearToSeconds(years) {
     const yearInSeconds = 31536000;

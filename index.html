@@ -3,12 +3,45 @@
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
-
     <script type="text/javascript" src ="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src ="build/js/app.js"></script> 
+    <script type="text/javascript" src ="build/js/app.js"></script>
+
     <title></title>
   </head>
   <body>
     <h1>Welcome!</h1>
+    <div class ="container">
+      <div id = "welcome" >
+        <h3>Hey Space Cadette!</h3>
+        <p>Enter your birth date in MM/DD/YYYY format.</p>
+        <form id="birthdayInput">
+          <label for="birthday"></label><br>
+          <input type="text" id="birthdate">
+          <button class="btn btn-success" type="submit">Tell me stuff!</button>
+        </form>
+      </div>
+
+      <div id="ageInSeconds" class="hide-at-start">
+        <p>Your Current Age:</p>
+        <span
+      </div>
+
+
+      <!-- <div id="beginning" class="hide-at-start">
+        <p>Congratulations <span id="bandName"></span>, you are ready to begin!</p>
+        <p>Looks like you need more intruments. Would you like to go to Archibald's Music Shoppe or Pete's Pawn Palace?</p>
+        <form id="getInstrumentsForm" class ="form-group">
+          <label>
+            <input type="radio" name="musicstore" value="store">
+            Archibald's Music Shoppe
+          </label><br>
+          <label>
+          <input type="radio" name="musicstore" value="pawn">
+            Pete's Dirty-ass Pawn Emporium
+          </label><br>
+          <button class="btn btn-success" type="submit">Party on!</button>
+        </form>
+      </div> -->
+    </div>
   </body>
 </html>
